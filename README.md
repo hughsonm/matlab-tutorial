@@ -1,6 +1,14 @@
 # Matlab Tutorial
 A showcase of the most useful features of Matlab, for first-year university students
 
+**Things to cover:**
+- Tour of important things in Matlab GUI 
+- Assigning variables, creating arrays, simple math operations, and vector math
+   - linspace, colon operator, []
+- Writing functions
+- Loops / conditionals
+- Plotting
+
 # 📈Look At This Graph!📉
 
 1. Make a new *script* by clicking on the "New Script" button
