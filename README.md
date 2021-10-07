@@ -34,6 +34,11 @@ High-school physics tells us:
 2. The y-component of the ball's velocity decreases linearly, so the y-component of its position is a quadratic
 
 We're going to plot the path of the ball as it flies through the ~air~ airless void.
+First, we'll use the equations of projectile motion to plot the path.
+Then, we'll pretend we don't know those equations, and we'll make Matlab do the thinking!
+
+## Equations of Projectile Motion
+
 To do this, we're going to need the equations for `x(t)` and `y(t)`.
 
 * `x(t) = vel * cos(theta) * t`
@@ -55,10 +60,15 @@ y = -g/2 * t.^2 + vel * sin(theta) * t;
 plot(x,y);
 ```
 
+## Make Matlab do the Thinking
+
+
 
 # Balance a Chemical Reaction
 
 
 # Write Your English Essay
+
+😩 Nope
 
 # Write a Function
