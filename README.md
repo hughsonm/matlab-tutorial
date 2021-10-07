@@ -126,3 +126,35 @@ other things we can do:
    - add other greeting options, besides hello
       - could add a second input argument, use if/else, or switch/case statements
    - ensure that the 'name' input is actually a string
+
+# Draw a Picture
+In this example, we'll learn more about plotting, and indexing matrices and vectors
+
+Let's start out with a 100x100 matrix of zeros:
+```octave
+picture = zeros(100); % this is equivalent to: picture = zeros(100,100);
+```
+This will look like an all black image:
+```octave
+figure; subplot(1,3,1)
+imshow(picture)
+title('A blank picture :(')
+```
+I'll use a for loop to add horizontal stripes, and then vertical stripes.
+```octave
+for ii = 1:10:100
+    picture(ii, :) = 1;
+end
+subplot(1,3,2)
+imshow(picture)
+
+for jj = 1:10:100
+    picture(:, jj) = 1;
+end
+subplot(1,3,3)
+imshow(picture)
+
+sgtitle('Masterpiece')
+```octave
+
+![My Picture](./images/picture.png)
