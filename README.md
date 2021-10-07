@@ -35,3 +35,15 @@ Matlab also helps you do your homework! Let's see how...
 # Write Your English Essay
 
 # Write a Function
+There are a few different ways to create functions in Matlab. The most common way is to create a new file, starting with the **function** keyword. Note that the name of the file must match the name of the function. Eg. for the function below, I'd make a file called *hello.m.* Also, make sure that the file is saved in your working directory.
+
+```octave
+function hello(name)
+    fprintf('Hello, %s\n', name) 
+end
+```
+other things we can do:
+   - make the function RETURN the greeting, instead of printing it
+   - add other greeting options, besides hello
+      - could add a second input argument, use if/else, or switch/case statements
+   - ensure that the 'name' input is actually a string
