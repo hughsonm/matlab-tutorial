@@ -155,6 +155,6 @@ subplot(1,3,3)
 imshow(picture)
 
 sgtitle('Masterpiece')
-```octave
+```
 
 ![My Picture](./images/picture.png)
