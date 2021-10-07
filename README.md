@@ -19,10 +19,45 @@ plot(t,s);
 Matlab lets you make mathematical graphs really easily.
 Matlab also helps you do your homework! Let's see how...
 
+# Launch a Projectile
+
+Let's launch a cannonball!
+Say the cannonball is shot like this:
+
+* At an angle of `theta` degrees
+* At a velocity of `vel` metres per second
+
+Let's ignore air resistance is this case.
+High-school physics tells us:
+
+1. The x-component of the ball's velocity stays constant
+2. The y-component of the ball's velocity decreases linearly, so the y-component of its position is a quadratic
+
+We're going to plot the path of the ball as it flies through the ~air~ airless void.
+To do this, we're going to need the equations for `x(t)` and `y(t)`.
+
+* `x(t) = vel * cos(theta) * t`
+* `y(t) = -g/2 * t^2 + vel * sin(theta) * t`
+
+Now we can copy the code from above where we plotted a sine function, and tweak it.
+
+```octave
+vel = 20;
+theta = 60*(pi/180);
+
+g = 9.81;
+
+t = linspace(0,5,1000);
+
+x = vel * cos(theta) * t;
+y = -g/2 * t.^2 + vel * sin(theta) * t;
+
+plot(x,y);
+```
+
 
 # Balance a Chemical Reaction
 
-# Launch a Projectile
 
 # Write Your English Essay
 
