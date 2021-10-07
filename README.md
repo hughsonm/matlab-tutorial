@@ -62,7 +62,41 @@ plot(x,y);
 
 ## Make Matlab do the Thinking
 
+This method starts out like the first method:
+```octave
+vel = 20;
+theta = 60*(pi/180);
 
+g = 9.81;
+
+t = linspace(0,5,1000);
+```
+
+We'll start with the exact equations for velocity, then we'll let Matlab calculate position.
+
+```octave
+vx = vel * cos(theta);
+vy = vel * sin(theta) - g * t;
+```
+
+Then, we'll use a ➿*loop*➿ to calculate the `x` and `y` components of position!
+To do that, we'll need to figure out the time-step between points in `t`.
+
+```octave
+time_step = (t(end)-t(1))/(length(t)-1);
+
+x = zeros(size(vx));
+y = zeros(size(xy));
+
+for ii = 1:(length(vx)-1)
+    x(ii+1) = x(ii) + time_step * vx(ii);
+    y(ii+1) = y(ii) + time_step * vy(ii);
+end
+
+plot(x,y);
+```
+
+Try writing these three blocks of code in a single script, then run the script. Do you get the right shape?
 
 # Balance a Chemical Reaction
 
