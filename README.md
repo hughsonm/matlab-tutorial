@@ -94,7 +94,7 @@ To do that, we'll need to figure out the time-step between points in `t`.
 time_step = (t(end)-t(1))/(length(t)-1);
 
 x = zeros(size(vx));
-y = zeros(size(xy));
+y = zeros(size(vy));
 
 for ii = 1:(length(vx)-1)
     x(ii+1) = x(ii) + time_step * vx(ii);
