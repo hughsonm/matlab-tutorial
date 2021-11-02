@@ -1,11 +1,12 @@
-***IMPORTANT! Please ensure that you have Matlab (or Octave) installed on your computer **prior to** the workshop!***
+# IMPORTANT!
+Please ensure that you have Matlab (or Octave) installed on your computer **prior to** the workshop!
 
 To install Matlab using U of M's shared student license:
 --
 
-1. Click [here](https://www.mathworks.com/licensecenter/total_headcount/47080-61901-41078-73435-65827?s_tid=tah_po_start), and log in with your @myumanitoba.ca credentials. This will take you to a MathWorks log-in page 
+1. Click [here](https://www.mathworks.com/licensecenter/total_headcount/47080-61901-41078-73435-65827?s_tid=tah_po_start), and log in with your @myumanitoba.ca credentials. This will take you to a MathWorks log-in page
 
-2. You need a MathWorks account that uses your @myumanitoba.ca email address. If you already have one, sign in. 
+2. You need a MathWorks account that uses your @myumanitoba.ca email address. If you already have one, sign in.
 If not, create one here.
 
 3. Accept the "Online Services Agreement"
