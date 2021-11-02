@@ -2,7 +2,7 @@
 A showcase of the most useful features of Matlab, for first-year university students
 
 **Things to cover:**
-- Tour of important things in Matlab GUI 
+- Tour of important things in Matlab GUI
 - Assigning variables, creating arrays, simple math operations, and vector math
    - linspace, colon operator, []
 - Writing functions
@@ -87,14 +87,20 @@ vx = vel * cos(theta);
 vy = vel * sin(theta) - g * t;
 ```
 
-Then, we'll use a ➿*loop*➿ to calculate the `x` and `y` components of position!
+But we **won't** use the exact equations for position.
+Instead, we'll just start with the initial position.
+Let's say the projectile starts at the position (-5,2).
+
+```octave
+x = -5;
+y = 2;
+```
+
+Then, we'll use a ➿*loop*➿ to calculate the `x` and `y` components of position as the projectile flies!
 To do that, we'll need to figure out the time-step between points in `t`.
 
 ```octave
 time_step = (t(end)-t(1))/(length(t)-1);
-
-x = zeros(size(vx));
-y = zeros(size(vy));
 
 for ii = 1:(length(vx)-1)
     x(ii+1) = x(ii) + time_step * vx(ii);
@@ -118,7 +124,7 @@ There are a few different ways to create functions in Matlab. The most common wa
 
 ```octave
 function hello(name)
-    fprintf('Hello, %s\n', name) 
+    fprintf('Hello, %s\n', name)
 end
 ```
 other things we can do:
