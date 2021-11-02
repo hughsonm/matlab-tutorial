@@ -102,8 +102,8 @@ To do that, we'll need to figure out the time-step between points in `t`.
 ```octave
 time_step = (t(end)-t(1))/(length(t)-1);
 
-for ii = 1:(length(vx)-1)
-    x(ii+1) = x(ii) + time_step * vx(ii);
+for ii = 1:(length(t)-1)
+    x(ii+1) = x(ii) + time_step * vx;
     y(ii+1) = y(ii) + time_step * vy(ii);
 end
 
