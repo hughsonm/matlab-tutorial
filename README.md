@@ -206,4 +206,4 @@ Try putting a **breakpoint** inside one of the for loops so that you can step th
 
 # In Closing
 We hope you enjoyed this workshop and feel more confident programming in Matlab! 
-If you have any questions or would like to get in touch, feel free to reach out by [email](ieeewiews@gmail.com), on [LinkedIn](www.linkedin.com/company/wie-winnipeg/) or on Instagram (@wie.winnipeg)
+If you have any questions or would like to get in touch, feel free to reach out by [email](mailto:ieeewiews@gmail.com), on [LinkedIn](https://www.linkedin.com/company/wie-winnipeg/) or on [Instagram](https://www.instagram.com/wie.winnipeg/)
