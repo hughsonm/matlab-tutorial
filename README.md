@@ -147,8 +147,6 @@ legend('solid blue line', 'magenta x-shaped markers', 'black dashed line')
 
 You can type `help plot` into the command line to see all of the options for this function.
 
-# Balance a Chemical Reaction
-
 
 # Write Your English Essay
 
