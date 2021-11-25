@@ -112,6 +112,41 @@ plot(x,y);
 
 Try writing these three blocks of code in a single script, then run the script. Do you get the right shape?
 
+### If you're a real keener (and have some extra time)...
+Matlab has lots of tools for making nice-looking plots.
+
+Let's add a title and axis labels to our projectile motion plot:
+
+```octave
+title('Projectile Motion of a Cannonball')
+xlabel('x')
+ylabel('y')
+```
+
+Try changing the axis labels to be more descriptive.
+
+If we want to add additonal curves on the same axes, we can use the `hold on` command. This *holds* the axes so that the current plot is not erased. Try:
+
+```octave
+hold on;
+plot(x+10, y)
+plot(x-10, y)
+legend('original plot', 'shifted right', 'shifted left')
+```
+
+Note that Matlab automatically assigns different colours to the curves. You can also choose the colours yourself, or set things like whether the lines are solid, dashed or have markers on the data points. 
+
+```octave
+figure; 	% this opens a new figure window
+hold on;
+plot(x, y, 'b') 
+plot(1.5*x, y, 'mx-')
+plot(x, y/2, 'k--')
+legend('solid blue line', 'magenta x-shaped markers', 'black dashed line')
+```
+
+You can type `help plot` into the command line to see all of the options for this function.
+
 # Balance a Chemical Reaction
 
 
@@ -120,21 +155,22 @@ Try writing these three blocks of code in a single script, then run the script. 
 😩 Nope
 
 # Write a Function
-There are a few different ways to create functions in Matlab. The most common way is to create a new file, starting with the **function** keyword. Note that the name of the file must match the name of the function. Eg. for the function below, I'd make a file called *hello.m.* Also, make sure that the file is saved in your working directory.
+There are a few different ways to create functions in Matlab. The most common way is to create a new file, starting with the **function** keyword. Note that the name of the file must match the name of the function. Eg. for the function below, I'd make a file called *hello.m.* Also, make sure that the file is saved in your *working directory*.
 
 ```octave
 function hello(name)
     fprintf('Hello, %s\n', name)
 end
 ```
+
 other things we can do:
-   - make the function RETURN the greeting, instead of printing it
+   - make the function **return** the greeting, instead of printing it
    - add other greeting options, besides hello
       - could add a second input argument, use if/else, or switch/case statements
    - ensure that the 'name' input is actually a string
 
 # Draw a Picture
-In this example, we'll learn more about plotting, and indexing matrices and vectors
+In this example, we'll learn about indexing matrices and vectors, and also do some more plotting.
 
 Let's start out with a 100x100 matrix of zeros:
 ```octave
@@ -163,4 +199,11 @@ imshow(picture)
 sgtitle('Masterpiece')
 ```
 
+***Extra Work:*** 
+Try putting a **breakpoint** inside one of the for loops so that you can step through it one stripe at a time
+
 ![My Picture](./images/picture.png)
+
+# In Closing
+We hope you enjoyed this workshop and feel more confident programming in Matlab! 
+If you have any questions or would like to get in touch, feel free to reach out by [email](ieeewiews@gmail.com), on [LinkedIn](www.linkedin.com/company/wie-winnipeg/) or on Instagram (@wie.winnipeg)
