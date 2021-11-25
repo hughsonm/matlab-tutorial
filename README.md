@@ -202,6 +202,13 @@ Try putting a **breakpoint** inside one of the for loops so that you can step th
 
 ![My Picture](./images/picture.png)
 
+
+# Requests for topics to cover
+- operations with complex numbers, inlcuding converting between polar and rectangular
+- matrix operations
+- solving systems of equations
+- symbolic computation
+
 # In Closing
 We hope you enjoyed this workshop and feel more confident programming in Matlab! 
 If you have any questions or would like to get in touch, feel free to reach out by [email](mailto:ieeewiews@gmail.com), on [LinkedIn](https://www.linkedin.com/company/wie-winnipeg/) or on [Instagram](https://www.instagram.com/wie.winnipeg/)
